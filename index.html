@@ -31,16 +31,24 @@
     <button class="nav-link" id="consonante-tab" data-bs-toggle="tab" data-bs-target="#consonante-tab-pane" type="button" role="tab" aria-controls="consonante-tab-pane" aria-selected="false" 
     onclick="mostrarConsonantes()">consonantes</button>
 </li>
+<li class="nav-item" role="presentation">
+    <button class="nav-link"
+            id="todas-tab"
+            type="button"
+            onclick="mostrarTodas()">
+        Todas
+    </button>
+</li>
   
 </ul>
 <div class="tab-content" id="botonesContent">
-  <div class="tab-pane fade show active" id="vocal-tab-pane" role="tabpanel" aria-labelledby="vocal-tab" tabindex="0">aeiou</div>
-  <div class="tab-pane fade" id="consonante-tab-pane" role="tabpanel" aria-labelledby="consonante-tab" tabindex="0">bcdfgjklmnñpqrstvwxyz</div>
+  <div class="tab-pane fade show active" id="vocal-tab-pane" role="tabpanel" aria-labelledby="vocal-tab" tabindex="0"></div>
+  <div class="tab-pane fade" id="consonante-tab-pane" role="tabpanel" aria-labelledby="consonante-tab" tabindex="0"></div>
   </div>
 
 <section id="contenedor">
 
-    <div class="tarjeta" onclick="voltear(this)">
+    <div class="tarjeta" data-tipo="vocal" onclick="voltear(this)">
         <div class="frente cara-frontal">
             <h2>A</h2>
         </div>
@@ -48,7 +56,7 @@
             <img src="https://i.pinimg.com/736x/35/da/4d/35da4d881f0217e3f4e61c9fadd9b89d.jpg" alt="">
         </div>
     </div>
-    <div class="tarjeta" onclick="voltear(this)" >
+    <div class="tarjeta" data-tipo="consonante" onclick="voltear(this)" >
         <div class="frente cara-frontal">
             <h2>B</h2>
         </div>
@@ -56,7 +64,7 @@
             <img src="https://i.pinimg.com/736x/4b/04/f3/4b04f36dec10aa3783a571e50a28bba9.jpg" alt="">
         </div>
     </div>
-    <div class="tarjeta" onclick="voltear(this)" >
+    <div class="tarjeta" data-tipo="consonante" onclick="voltear(this)" >
         <div class="frente cara-frontal">
             <h2>C</h2>
         </div>
