@@ -1,0 +1,48 @@
+#contenedor{
+    display: flex;
+    height: 100vh;
+    justify-content: center; /*Alina el contenido de manera horizontal*/
+    align-items: center;    /*Alinea el contenido de manera vertical*/
+}
+
+.tarjeta{
+    background-color: rgb(0, 172, 234);
+    margin: 15px;
+    width: 220px;
+    height: 300px;
+    border-radius: 35px;
+    position: relative;
+    transform: 1s;
+    transform-style: preserve-3d;
+}
+
+.frente{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+.cara-frontal{
+    background: red;
+}
+.cara-trasera{
+    background: blue;
+    transform: rotateY(180deg);
+}
+.frente > h1, .detras>img{
+    width: 220px;
+    height: 300px;
+}
+
+.tarjeta:hover{
+    cursor: pointer;
+}
+/* El frente se va hacia atrás */
+.tarjeta.volteada .cara-frontal {
+    transform: rotateY(-180deg); 
+}
+
+/* El dorso viene hacia adelante */
+.tarjeta.volteada .cara-trasera {
+    transform: rotateY(0deg);
+}
