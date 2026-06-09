@@ -1,3 +1,9 @@
+
+var card = document.querySelector('.card');
+card.addEventListener( 'click', function() {
+  card.classList.toggle('is-flipped');
+});
+
 // botones que llaman a las funciones para mostrar vocales o consonantes
 
 const botonVocales = document.getElementById("vocal-tab");
@@ -38,14 +44,3 @@ let contador = 0;
 let AContador = document.getElementById("contador");
 
 
-function voltear(tarjeta) {
-    if(!tarjeta.classList.contains('cara-trasera')){
-        tarjeta.classList.add('cara-trasera');
-        contador = contador +1;
-        AContador.textContent = contador;
-    }else{
-        tarjeta.classList.remove('cara-trasera');
-        contador = contador-1;
-        AContador.textContent = contador;
-    }
-}
