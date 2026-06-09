@@ -1,8 +1,19 @@
+let contador = 0;
+let AContador = document.getElementById("contador");
 
-var card = document.querySelector('.card');
-card.addEventListener( 'click', function() {
-  card.classList.toggle('is-flipped');
-});
+
+function voltear(tarjeta) {
+    if(!tarjeta.classList.contains('cara-trasera')){
+        tarjeta.classList.add('cara-trasera');
+        contador = contador +1;
+        AContador.textContent = contador;
+    }else{
+        tarjeta.classList.remove('cara-trasera');
+        contador = contador-1;
+        AContador.textContent = contador;
+    }
+}
+
 
 // botones que llaman a las funciones para mostrar vocales o consonantes
 
@@ -39,8 +50,5 @@ document.querySelectorAll(".filtro").forEach(boton => {
     });
 });
 //------------------------------------------
-
-let contador = 0;
-let AContador = document.getElementById("contador");
 
 
