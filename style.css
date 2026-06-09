@@ -1,0 +1,89 @@
+
+
+:root{
+    font-family: sans-serif;
+}
+
+
+
+/*navbar*/
+nav {
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 68px;
+  border-bottom: 1px solid #eee;
+  background: #AAC4F5;
+  gap: 2rem;
+}
+.logo {
+  font-size: 16px;
+  font-weight: 500;
+  color: #111;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.links {
+  display: flex;
+  gap: 1.75rem;
+  list-style: none;
+}
+.links a {
+  font-size: 14px;
+  color: #888;
+  text-decoration: none;
+}
+.links a:hover, .links a.active {
+  color: #111;
+  font-weight: 500;
+}
+.search-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  height: 46px;
+  padding: 0 20px;
+  background: #f5f5f3;
+  flex: 1;
+  max-width: 480px;
+  transition: border-color 0.15s, background 0.15s;
+}
+.search-pill:focus-within {
+  border-color: #aaa;
+  background: #fff;
+}
+.search-pill i { font-size: 18px; color: #bbb; flex-shrink: 0; }
+.search-pill input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 15px;
+  color: #111;
+  outline: none;
+  min-width: 0;
+}
+.search-pill input::placeholder { color: #bbb; }
+.clear {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #bbb;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+.clear:hover { color: #111; }
+.cta {
+  font-size: 13px;
+  padding: 9px 22px;
+  border-radius: 999px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.cta:hover { opacity: 0.75; }
