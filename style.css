@@ -1,0 +1,12 @@
+#botonesTab{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+#botonesContent {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
