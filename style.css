@@ -16,6 +16,13 @@
     justify-content: center; /*Alina el contenido de manera horizontal*/
     align-items: center;    /*Alinea el contenido de manera vertical*/
 }
+#contenedor {
+    display: flex;
+    flex-wrap: wrap;      /* Permite saltar de línea */
+    justify-content: center;
+    gap: 20px;            /* Espacio entre tarjetas */
+    padding: 20px;
+}
 
 .tarjeta{
     background-color: rgb(0, 172, 234);
@@ -42,10 +49,10 @@
     padding: 15px;
 }
 .cara-frontal{
-    background: red;
+    background: rgb(82, 206, 241);
 }
 .cara-trasera{
-    background: blue;
+    background: rgb(150, 150, 226);
     transform: rotateY(180deg);
 }
 
@@ -66,9 +73,9 @@
 
 
 .scene {
-  width: 200px;
-  height: 260px;
-  perspective: 600px;
+  width: 100px;
+  height: 160px;
+  perspective: 300px;
 }
 .card {
   width: 100%;
