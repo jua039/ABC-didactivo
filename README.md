@@ -1,2 +1,4 @@
 # ABC-didactivo
-# Karen martinez
+# Karen Martinez
+# Juan Vivas
+# Lina Gallardo
